@@ -1,6 +1,8 @@
 # Starting point
 
-[![build-ublue](https://github.com/ublue-os/startingpoint/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/startingpoint/actions/workflows/build.yml)
+[![build-ublue](https://github.com/PsyonikTheBacca/vfio-kinoite/actions/workflows/build.yml/badge.svg)](https://github.com/PsyonikTheBacca/vfio-kinoite/actions/workflows/build.yml)
+
+
 
 This is a constantly updating template repository for creating [a native container image](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) designed to be customized however you want. GitHub will build your image for you, and then host it for you on [ghcr.io](https://github.com/features/packages). You then just tell your computer to boot off of that image. GitHub keeps 90 days worth image backups for you, thanks Microsoft!
 
@@ -35,7 +37,7 @@ If you want to execute custom shell scripts or commands in the image build, you 
 
 Instead, you should create your own custom shell scripts in the `scripts/` directory (look at the `example.sh`). After creating your scripts, enable them in the `scripts:` section of your `recipe.yml`, within the specific "build stage" category where the scripts are intended to be executed. Alternatively, enable the `autorun.sh` helper script in your recipe to automatically execute your custom scripts.
 
-Read [the README in the `scripts/` directory](https://github.com/ublue-os/startingpoint/blob/main/scripts/README.md) for more information.
+Read [the README in the `scripts/` directory](https://github.com/PsyonikTheBacca/vfio-kinoite/blob/main/scripts/README.md) for more information.
 
 ### Custom package repositories
 
