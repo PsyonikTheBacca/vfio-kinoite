@@ -66,19 +66,16 @@ rpm:
     - btop
     # Virtual Machine Stuff
     - edk2-ovmf
+    - virt-install
     - libvirt-daemon-config-network
-    - libvirt-daemon-config-nwfilter
-    - libvirt-daemon-driver-nwfilter
-    - libvirt-daemon-driver-qemu
     - libvirt-daemon-kvm
     - qemu-kvm
-    - virt-install
     - virt-manager
     - virt-viewer
     # Wireguard CLI
     - wireguard-tools
     # Tailscale
-    - tailscale
+    # - tailscale
     # Fish shell
     - fish
     # KDE Tweaks
@@ -90,9 +87,9 @@ rpm:
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
     # tmux and vim not needed
-    - tmux
-    - vim
-    - htop # replaced with btop
+    #- tmux
+    #- vim
+    #- htop # replaced with btop
 
 # Configuration for the "first boot" experience, which is available after login.
 firstboot:
